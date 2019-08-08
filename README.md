@@ -10,8 +10,8 @@ You can upload a zip of your program.  It will unzip it inside the /opt/deployse
 
 Zip format:
 
-<ServiceName>.zip
--<ServiceNameExecutable>
+"ServiceName".zip<br>
+-"ServiceName"Executable<br>
 -Any other required files
 
 You can also directly upload files after the initial deployment.  This server will accept the uploaded file, stop the systemd service(if running), copy/replace the file, then start the service(if it was running).
@@ -19,17 +19,17 @@ You can also directly upload files after the initial deployment.  This server wi
 
 Here is my usual workflow:
 
-Server is running and a bug is discovered
-Fix the bug, recompile program
-SSH to server, start deployserver, remote forward port through ssh
-Upload new compiled executable via webpage
-stop deployserver
-close ssh
-wait for the next bug
+1. Server is running and a bug is discovered
+2. Fix the bug, recompile program
+3. SSH to server, start deployserver, remote forward port through ssh
+4. Upload new compiled executable via webpage
+5. stop deployserver
+6. close ssh
+7. wait for the next bug
 
 TODO:
-Fix file browsing/removing
-Make web interface better
-User credentials
-Better formatting of systemd output
-Better handling systemd commands
+- Fix file browsing/removing
+- Make web interface better
+- User credentials
+- Better formatting of systemd output
+- Better handling systemd commands
