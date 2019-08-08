@@ -3,6 +3,11 @@ Web Interface used for deploying programs to systemd based linux servers
 
 This is a fairly specifically made tool to easily deploy executables to a linux server systemd service.  I use it in produciton to update/upload the executable and support files.  Check the wiki for a screenshot.
 
+The only external packages are the storm ORM layer on top of bbolt and gorilla mux.  The javascript and css are links to CDN's.
+
+- main.go: All source code in one file. Sorry!
+- service.txt: Template used to create systemd file
+- index.html: Templated used for injecting the "Page" struct.  Another sorry for imporper template use!
 
 Build, then copy the executable and the two supporting files to /opt/deployserver, run executable with root permissions.  Navigate a web browser to port 8181 on the host.
 
