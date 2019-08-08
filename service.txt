@@ -1,0 +1,14 @@
+[Unit]
+Description={{.ID}}
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5s
+ExecStart={{.Location}}/{{.ID}}
+User=root
+Group=root
+WorkingDirectory={{.Location}}
+
+[Install]
+WantedBy=multi-user.target
