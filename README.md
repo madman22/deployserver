@@ -34,3 +34,8 @@ TODO:
 - Better formatting of systemd output
 - Better handling systemd commands
 - accept uploading another zip to batch updates
+- sh*t or get off the pot with database integration
+  - Add history of user actions
+  - archive uploads/backups to database or directories
+  - users/groups/etc
+- Add one time use functionality for interacting that will still log everything without starting a webserver
