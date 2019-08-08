@@ -7,7 +7,7 @@ The only external packages are the storm ORM layer on top of bbolt and gorilla m
 
 - main.go: All source code in one file. Sorry!
 - service.txt: Template used to create systemd file
-- index.html: Templated used for injecting the "Page" struct.  Another sorry for imporper template use!
+- index.html: Templated used for injecting the "Page" struct.  Another sorry for improper template use!
 
 Build, then copy the executable and the two supporting files to /opt/deployserver, run executable with root permissions.  Navigate a web browser to port 8181 on the host.
 
