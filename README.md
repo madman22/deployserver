@@ -1,7 +1,7 @@
 # deployserver
 Web Interface used for deploying programs to systemd based linux servers
 
-This is a fairly specifically made tool to easily deploy executables to a linux server systemd service.  I use it in produciton to update/upload the executable and support files.
+This is a fairly specifically made tool to easily deploy executables to a linux server systemd service.  I use it in produciton to update/upload the executable and support files.  Check the wiki for a screenshot.
 
 
 Copy to /opt/deployserver, run executable with root permissions.  Navigate a web browser to port 8181 on the host.
@@ -33,3 +33,4 @@ TODO:
 - User credentials
 - Better formatting of systemd output
 - Better handling systemd commands
+- accept uploading another zip to batch updates
