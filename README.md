@@ -33,6 +33,7 @@ Here is my usual workflow:
 7. wait for the next bug
 
 TODO:
+- implement something like https://github.com/kardianos/service for cross platform services
 - Fix file browsing/removing
 - Make web interface better
 - User credentials
